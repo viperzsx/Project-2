@@ -1,199 +1,235 @@
-/* style.css */
+/* Reset and Base Styles */
+/* Resets default browser styles and sets base styles for the document */
 
-/* Reset and base styles */
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-  
-  body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-color: #0d1117;
-    color: #c9d1d9;
-    line-height: 1.6;
-  }
-  
-  header {
-    background-color: #161b22;
-    text-align: center;
-    padding: 2rem 1rem;
-    border-bottom: 2px solid #30363d;
-  }
-  
-  header h1 {
-    font-size: 2.5rem;
-    color: #58a6ff;
-  }
-  
-  header p {
-    color: #8b949e;
-    margin-top: 0.5rem;
-  }
-  
-  nav {
-    background-color: #21262d;
-    padding: 1rem;
-  }
-  
-  nav ul {
-    display: flex;
-    justify-content: center;
-    list-style: none;
-    gap: 2rem;
-  }
-  
-  nav ul li a {
-    color: #c9d1d9;
-    text-decoration: none;
-    font-weight: bold;
-    padding: 0.5rem 1rem;
-    border-radius: 5px;
-    transition: background-color 0.3s;
-  }
-  
-  nav ul li a:hover {
-    background-color: #30363d;
-  }
-  
-  .grid-container {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 2rem;
-    padding: 2rem;
-  }
-  
-  .card {
-    background-color: #161b22;
-    padding: 1.5rem;
-    border: 1px solid #30363d;
-    border-radius: 10px;
-    text-align: center;
-    transition: transform 0.2s ease, box-shadow 0.2s ease;
-  }
-  
-  .card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
-  }
-  
-  .card img {
-    width: 80px;
-    margin-bottom: 1rem;
-  }
-  
-  .card h2 {
-    color: #58a6ff;
-    margin-bottom: 0.5rem;
-  }
-  
-  .card p {
-    color: #8b949e;
-  }
-  
-  footer {
-    background-color: #161b22;
-    color: #8b949e;
-    text-align: center;
-    padding: 1rem;
-    margin-top: 2rem;
-    border-top: 1px solid #30363d;
-  }
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
-  .info-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 2rem;
-    max-width: 1200px;
-    margin: 3rem auto;
-    padding: 1rem;
-    justify-content: center;
-  }
-  
-  .info-box {
-    background-color: #161b22;
-    padding: 1.5rem;
-    border: 1px solid #30363d;
-    border-radius: 10px;
-    text-align: center;
-    color: #c9d1d9;
-  }
-  
-  .info-box h3 {
-    color: #58a6ff;
-    margin-bottom: 0.5rem;
-  }
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #0d1117;
+  color: #c9d1d9;
+  line-height: 1.6;
+}
 
-  .feature-section {
-    max-width: 1100px;
-    margin: 4rem auto;
-    padding: 0 1rem;
-    display: flex;
-    flex-direction: column;
-    gap: 4rem;
-  }
-  
-  .feature {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: center;
-    gap: 2rem;
-  }
-  
-  .feature-text {
-    flex: 1;
-    min-width: 280px;
-    color: #c9d1d9;
-  }
-  
-  .feature-text h2 {
-    color: #58a6ff;
-    margin-bottom: 0.5rem;
-  }
-  
-  .feature-text p {
-    margin-bottom: 1rem;
-    color: #8b949e;
-  }
-  
-  .feature-text button {
-    margin-right: 1rem;
-    padding: 0.5rem 1.2rem;
-    font-size: 1rem;
-    border-radius: 5px;
-    border: none;
-    background-color: #238636;
-    color: white;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-  }
-  
-  .feature-text button:last-child {
-    background-color: transparent;
-    color: #c9d1d9;
-    border: 1px solid #c9d1d9;
-  }
-  
-  .feature-text button:hover {
-    background-color: #2ea043;
-  }
-  
-  .feature-image {
-    flex: 1;
-    min-width: 280px;
-    display: flex;
-    justify-content: center;
-  }
-  
-  .feature-image img {
-    max-width: 100%;
-    height: auto;
-    border-radius: 10px;
-    border: 1px solid #30363d;
-  }
-  
-  .feature-form {
+/* Header Section */
+/* Styles for the header and its content */
+
+
+header {
+  background-color: #161b22;
+  text-align: center;
+  padding: 2rem 1rem;
+  border-bottom: 2px solid #30363d;
+}
+
+header h1 {
+  font-size: 2.5rem;
+  color: #58a6ff;
+}
+
+header p {
+  color: #8b949e;
+  margin-top: 0.5rem;
+}
+
+/* Navigation Bar */
+/* Styles for the navigation menu */
+nav {
+  background-color: #21262d;
+  padding: 1rem;
+}
+
+nav ul {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  gap: 2rem;
+}
+
+/* Navigation Buttons */
+nav ul li button {
+  background-color: #58a6ff; /* Blue background */
+  color: white; /* White text */
+  font-weight: bold;
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+nav ul li button:hover {
+  background-color: #67aeff; /* Lighter blue on hover */
+  transform: translateY(-2px); /* Slight lift effect */
+}
+
+nav ul li button:active {
+  background-color: #3383dd; /* Darker green when clicked */
+  transform: translateY(0); /* Reset lift effect */
+}
+
+nav ul li a {
+  color: #c9d1d9;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+nav ul li a:hover {
+  background-color: #30363d;
+}
+
+/* Grid Layout for Cards */
+/* Styles for a grid container and individual cards */
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+  padding: 2rem;
+}
+
+.card {
+  background-color: #161b22;
+  padding: 1.5rem;
+  border: 1px solid #30363d;
+  border-radius: 10px;
+  text-align: center;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+}
+
+.card img {
+  width: 80px;
+  margin-bottom: 1rem;
+}
+
+.card h2 {
+  color: #58a6ff;
+  margin-bottom: 0.5rem;
+}
+
+.card p {
+  color: #8b949e;
+}
+
+/* Footer Section */
+/* Styles for the footer */
+footer {
+  background-color: #161b22;
+  color: #8b949e;
+  text-align: center;
+  padding: 1rem;
+  margin-top: 2rem;
+  border-top: 1px solid #30363d;
+}
+
+/* Info Grid Section */
+/* Styles for a grid layout used for informational content */
+.info-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+  max-width: 1200px;
+  margin: 3rem auto;
+  padding: 1rem;
+  justify-content: center;
+}
+
+.info-box {
+  background-color: #161b22;
+  padding: 1.5rem;
+  border: 1px solid #30363d;
+  border-radius: 10px;
+  text-align: center;
+  color: #c9d1d9;
+}
+
+.info-box h3 {
+  color: #58a6ff;
+  margin-bottom: 0.5rem;
+}
+
+/* Feature Section */
+/* Styles for the feature section, including text, images, and forms */
+.feature-section {
+  max-width: 1100px;
+  margin: 4rem auto;
+  padding: 0 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+}
+
+.feature {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2rem;
+}
+
+.feature-text {
+  flex: 1;
+  min-width: 280px;
+  color: #c9d1d9;
+}
+
+.feature-text h2 {
+  color: #58a6ff;
+  margin-bottom: 0.5rem;
+}
+
+.feature-text p {
+  margin-bottom: 1rem;
+  color: #8b949e;
+}
+
+.feature-text button {
+  margin-right: 1rem;
+  padding: 0.5rem 1.2rem;
+  font-size: 1rem;
+  border-radius: 5px;
+  border: none;
+  background-color: #238636;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.feature-text button:last-child {
+  background-color: transparent;
+  color: #c9d1d9;
+  border: 1px solid #c9d1d9;
+}
+
+.feature-text button:hover {
+  background-color: #2ea043;
+}
+
+.feature-image {
+  flex: 1;
+  min-width: 280px;
+  display: flex;
+  justify-content: center;
+}
+
+.feature-image img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+  border: 1px solid #30363d;
+}
+
+.feature-form {
   flex: 1;
   min-width: 280px;
   background-color: #161b22;
@@ -238,6 +274,8 @@
   background-color: #2ea043;
 }
 
+/* Gallery Section */
+/* Styles for a gallery layout */
 div.gallery {
   margin: 5px;
   border: 1px solid #ccc;
