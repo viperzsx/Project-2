@@ -1,6 +1,33 @@
 /* Reset and Base Styles */
 /* Resets default browser styles and sets base styles for the document */
 
+.vertical-bars::before,
+.vertical-bars::after {
+  content: "";
+  position: fixed;
+  top: 0;
+  width: 60px;
+  height: 100vh;
+  background-color: #1f2937;
+  z-index: -1;
+}
+
+.vertical-bars::before {
+  left: 0;
+}
+
+.vertical-bars::after {
+  right: 0;
+}
+
+.site-wrapper {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 2rem;
+  position: relative;
+  z-index: 1;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -276,23 +303,39 @@ footer {
 
 /* Gallery Section */
 /* Styles for a gallery layout */
-div.gallery {
-  margin: 5px;
-  border: 1px solid #ccc;
-  float: left;
-  width: 180px;
+/* Gallery Section */
+/* Updated styles for the gallery layout */
+.gallery-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+  padding: 2rem 0;
 }
 
-div.gallery:hover {
-  border: 1px solid #777;
+.gallery {
+  background-color: #161b22;
+  padding: 1rem;
+  border: 1px solid #30363d;
+  border-radius: 10px;
+  width: 280px;
+  text-align: center;
+  transition: transform 0.2s ease;
 }
 
-div.gallery img {
+.gallery:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 0 10px rgba(0, 255, 204, 0.2);
+}
+
+.gallery img {
   width: 100%;
   height: auto;
+  border-radius: 5px;
 }
 
-div.desc {
-  padding: 15px;
-  text-align: center;
+.desc {
+  margin-top: 0.5rem;
+  color: #c9d1d9;
+  font-weight: bold;
 }

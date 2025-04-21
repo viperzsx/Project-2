@@ -7,6 +7,9 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
+
+  <div class="vertical-bars"></div> <!-- Side bars -->
+
   <header>
     <h1>LED & Sound Solutions</h1>
     <p>Shop for LED lighting and car audio upgrades</p>
@@ -14,115 +17,195 @@
 
   <nav>
     <ul>
-      <li><button onclick="href='index.html'">Home</a></li>
-      <li><button onclick="href='ledbulb.html'">LED Bulb Search</a></li>
-      <li><button onclick="href='#'">Speaker Search</a></li>
-      <li><button onclick="href='techsupport.html'">Tech Support</a></li>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="ledbulb.html">LED Bulb Search</a></li>
+      <li><a href="speakers.html">Speaker Search</a></li>
+      <li><a href="techsupport.html">Tech Support</a></li>
     </ul>
   </nav>
   
-  <main class="grid-container">
-    <section class="card">
-      <img src="led.jpg" alt="LED Bulb Icon">
-      <h2>LED Bulb Search</h2>
-      <p>Find LED bulbs that fit your car by year, make, model, and bulb type.</p>
-    </section>
 
-    <section class="card">
-      <img src="carspeaker.jpg" alt="Speaker Icon">
-      <h2>Speaker Search</h2>
-      <p>Get the right speaker sizes and options for your car's audio system.</p>
-    </section>
+  <div class="site-wrapper"> <!-- All content starts here -->
 
-    <section class="card">
-      <img src="caraccessories.jpg" alt="Accessories Icon">
-      <h2>Accessories</h2>
-      <p>Explore additional accessories and enhancements for your ride.</p>
-    </section>
+    <section class="feature-section">
+      <div class="feature">
+        <div class="feature-text">
+          <h2>Find your bulb</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur sit amet luctus metus. Nulla facilisi.</p>
+        </div>
+        <div class="feature-form">
+          <form>
+            <label for="year">Year:</label>
+            <select id="year" name="year">
+              <option value="2000">2000</option>
+              <!-- adding more -->
+              <option value="2010">2010</option>
+            </select><br><br>
 
-    <section class="card">
-      <img src="techsupport.jpg" alt="Tech Support Icon">
-      <h2>Tech Support</h2>
-      <p>Installation guides, part numbers, and help resources.</p>
-    </section>
-  </main>
+            <label for="make">Make:</label>
+            <select id="make" name="make">
+              <option value="honda">Honda</option>
+              <option value="toyota">Toyota</option>
+            </select><br><br>
 
-  <section class="feature-section">
-    <div class="feature">
-      <div class="feature-text">
-        <h2>Find your bulb</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur sit amet luctus metus. Nulla facilisi.</p>
+            <label for="model">Model:</label>
+            <select id="model" name="model">
+              <option value="civic">Civic</option>
+              <option value="rav4">Rav4</option>
+            </select><br><br>
+
+            <label for="position">Bulb Position:</label>
+            <input type="text" id="position" name="position" placeholder="e.g. High Beam"><br><br>
+
+            <button type="submit">Find Bulb</button>
+          </form>
+        </div>
       </div>
-      <div class="feature-form">
-  <form>
-    <label for="year">Year:</label>
-    <select id="year" name="year">
-      <option value="2000">2000</option>
-      <option value="2001">2001</option>
-      <option value="2002">2002</option>
-      <option value="2003">2003</option>
-      <option value="2004">2004</option>
-      <option value="2005">2005</option>
-      <option value="2006">2006</option>
-      <option value="2007">2007</option>
-      <option value="2008">2008</option>
-      <option value="2009">2009</option>
-      <option value="2010">2010</option>
-    </select><br><br>
 
-    <label for="make">Make:</label>
-    <select id="make" name="make">
-      <option value="honda">Honda</option>
-      <option value="toyota">Toyota</option>
-    </select><br><br>
+      <div class="feature">
+        <div class="feature-text">
+          <h2>Find your Speaker</h2>
+          <p>Search speaker sizes for your specific car to get the perfect fit for doors, rear decks, or dashboards.</p>
+        </div>
+        <div class="feature-form">
+          <form>
+            <label for="year-speaker">Year:</label>
+            <select id="year-speaker" name="year">
+              <option value="2000">2000</option>
+              <!-- adding more -->
+              <option value="2010">2010</option>
+            </select><br><br>
 
-    <label for="model">Model:</label>
-    <select id="model" name="model">
-      <option value="civic">Civic</option>
-      <option value="rav4">Rav4</option>
-    </select><br><br>
+            <label for="make-speaker">Make:</label>
+            <select id="make-speaker" name="make">
+              <option value="honda">Honda</option>
+              <option value="toyota">Toyota</option>
+            </select><br><br>
 
-    <label for="position">Bulb Position:</label>
-    <input type="text" id="position" name="position" placeholder="e.g. High Beam"><br><br>
+            <label for="model-speaker">Model:</label>
+            <select id="model-speaker" name="model">
+              <option value="civic">Civic</option>
+              <option value="rav4">RAV4</option>
+            </select><br><br>
 
-    <button type="submit">Find Bulb</button>
-  </form>
-</div>
-    </div>
+            <label for="location-speaker">Speaker Location:</label>
+            <input type="text" id="location-speaker" name="location" placeholder="e.g. Rear Deck, Front Door"><br><br>
 
-    <div class="feature">
-      <div class="feature-text">
-        <h2>Find your Speaker</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur sit amet luctus metus. Nulla facilisi.</p>
-       
+            <label for="size-speaker">Speaker Size:</label>
+            <select id="size-speaker" name="size">
+              <option value="3.5">3.5"</option>
+              <option value="4">4"</option>
+              <option value="5.25">5.25"</option>
+              <option value="6.5">6.5"</option>
+              <option value="6.75">6.75"</option>
+              <option value="6x8">6x8"</option>
+              <option value="6x9">6x9"</option>
+            </select><br><br>
+
+            <button type="submit">Find Speaker</button>
+          </form>
+        </div>
       </div>
-      <div class="feature-image">
-        <img src="https://via.placeholder.com/300x200" alt="Speaker Search Preview">
+    </section>
+
+    <section class="info-grid">
+      <div class="info-box">
+        <h3>Why Upgrade Your LEDs?</h3>
+        <p>LEDs last longer, shine brighter, and are more energy-efficient. They're the future of automotive lighting.</p>
+      </div>
+      <div class="info-box">
+        <h3>Better Sound for the Road</h3>
+        <p>Upgrade your speakers for deep bass, crisp highs, and a custom audio experience for your ride.</p>
+      </div>
+      <div class="info-box">
+        <h3>More Accessories Coming</h3>
+        <p>From dash cams to underglow kits, we’ll help you light up and level up your vehicle inside and out.</p>
+      </div>
+      <div class="info-box">
+        <h3>Need Help?</h3>
+        <p>Visit our Tech Support page for guides, tips, and help from our support team. We’ve got your back.</p>
+      </div>
+    </section>
+
+    <div style="max-width: 800px; margin: 0 auto; padding: 20px;">
+      <div class="accordion" id="accordionExample">
+    
+        <!-- Accordion Item 1 -->
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingOne">
+            <button class="accordion-button" type="button" data-bs-toggle="collapse"
+              data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+              Halogen vs LED: What's the Difference?
+            </button>
+          </h2>
+          <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+            data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              <p><strong>LEDs vs Halogens:</strong> LEDs are brighter, more energy-efficient, and last much longer than halogens. While halogens are cheaper upfront and easy to replace, LEDs save more money in the long run with better performance.</p>
+              <ul>
+                <li><strong>Brightness:</strong> LEDs offer white, focused beams; halogens emit yellowish light.</li>
+                <li><strong>Lifespan:</strong> LEDs last thousands of hours; halogens burn out sooner.</li>
+                <li><strong>Heat:</strong> LEDs stay cool; halogens run hot.</li>
+                <li><strong>Cost:</strong> Halogens are budget-friendly; LEDs are a smart investment.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+    
+        <!-- Accordion Item 2 -->
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingTwo">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+              data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+              How to Identify Your Car’s Bulb Type
+            </button>
+          </h2>
+          <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+            data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              <p>To upgrade your headlights or interior lighting, you first need to find your bulb size. Here’s how:</p>
+              <ol>
+                <li><strong>Check the Owner’s Manual:</strong> Look under “Lighting” or “Bulb Replacement.”</li>
+                <li><strong>Look at the Existing Bulb:</strong> You’ll usually see a code like <code>H11</code> or <code>9005</code> on it.</li>
+                <li><strong>Use Online Lookup Tools:</strong> Many parts websites let you search by year, make, and model.</li>
+              </ol>
+              <p>Tip: Common sizes include <code>H11</code>, <code>9006</code>, <code>H4</code>, and <code>7443</code>.</p>
+            </div>
+          </div>
+        </div>
+    
+        <!-- Accordion Item 3 -->
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingThree">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+              data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+              Installation Tips for LED Bulbs
+            </button>
+          </h2>
+          <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+            data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              <p>Installing LED bulbs is usually easy, but here are a few things to know:</p>
+              <ul>
+                <li><strong>Polarity:</strong> If the bulb doesn’t light up, flip the connector 180°.</li>
+                <li><strong>CANBus Issues:</strong> Some vehicles need resistors to avoid flickering or error messages.</li>
+                <li><strong>Beam Pattern:</strong> Align LEDs so the chips face 3 and 9 o’clock for best visibility.</li>
+                <li><strong>Secure Wires:</strong> Make sure any extra wiring or drivers are tucked away and sealed.</li>
+              </ul>
+              <p>Test everything before driving—good alignment avoids blinding others and improves your night vision.</p>
+            </div>
+          </div>
+        </div>
+    
       </div>
     </div>
-  </section>
 
-  <section class="info-grid">
-    <div class="info-box">
-      <h3>Why Upgrade Your LEDs?</h3>
-      <p>LEDs last longer, shine brighter, and are more energy-efficient. They're the future of automotive lighting.</p>
-    </div>
-    <div class="info-box">
-      <h3>Better Sound for the Road</h3>
-      <p>Upgrade your speakers for deep bass, crisp highs, and a custom audio experience for your ride.</p>
-    </div>
-    <div class="info-box">
-      <h3>More Accessories Coming</h3>
-      <p>From dash cams to underglow kits, we’ll help you light up and level up your vehicle inside and out.</p>
-    </div>
-    <div class="info-box">
-      <h3>Need Help?</h3>
-      <p>Visit our Tech Support page for guides, tips, and help from our support team. We’ve got your back.</p>
-    </div>
-  </section>
+  </div> <!-- End site-wrapper -->
 
   <footer>
     <p>&copy; 2025 LED & Sound Solutions | All Rights Reserved</p>
   </footer>
+
+
 </body>
 </html>
